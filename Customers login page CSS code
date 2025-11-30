@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image */
+body {
+    height: 100vh;
+    background: url('group-perspective-mall-street-fashion.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay (dark layer on background) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* adjust darkness */
+    z-index: 1;
+}
+
+.login-container {
+    position: relative;
+    z-index: 2; /* keeps login form above overlay */
+    width: 380px;
+}
+
+.login-card {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 40px 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-card h1 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 14px 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-card input:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 8px rgba(255,127,80,0.3);
+}
+
+.login-card button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: linear-gradient(135deg,#ff7f50,#ff5722);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: linear-gradient(135deg,#ff5722,#e64a19);
+}
+
+.switch-text {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.switch-text span {
+    color: #ff7f50;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
