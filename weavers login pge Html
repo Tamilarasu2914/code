@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handloom Weavers Nexus - Weavers Login</title>
+    <link rel="stylesheet" href="wlogin.css">
+</head>
+
+<body>
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Login Box -->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>Weavers Login</h1>
+                <p>Access your weaver dashboard</p>
+            </div>
+
+            <form id="weaver-login-form">
+                <input type="text" placeholder="Weaver ID" id="weaver-id" required>
+                <input type="password" placeholder="Password" id="weaver-password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="back-text">
+                <a href="clogin.html">← Back to Customer Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="weaver-script.js"></script>
+</body>
+</html>
